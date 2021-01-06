@@ -24,7 +24,8 @@ void LianLED::write(bool on)
     offMillis = 0;
     control(on);
 }
-
+//write() 函数实现LED灯一直亮，或者一直暗
+//blink（）函数传值实现LED灯亮多久或者暗多久 （具体的实现由update（）执行）
 
 // 写LED状态，输入参数为on，表示LED是亮（true）还是熄灭（false）
 void LianLED::control(bool on)
